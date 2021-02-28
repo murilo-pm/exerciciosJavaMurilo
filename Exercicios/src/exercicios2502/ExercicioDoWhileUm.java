@@ -1,5 +1,4 @@
 package exercicios2502;
-
 import java.util.Scanner;
 
 public class ExercicioDoWhileUm {
@@ -7,14 +6,14 @@ public class ExercicioDoWhileUm {
 	public static void main(String[] args) {			
 
 		Scanner leia = new Scanner(System.in);
-		int numero, i, acumulador = 0;
-		
-		for (i = 1; i > 0; i++) {
-		System.out.print("Digite um número: ");
+		int numero, contador = 0, soma = 0;
+		do{System.out.print("Digite um número: ");
 		numero = leia.nextInt();
-		acumulador+=numero;
-		System.out.println("O resultado da soma é " + acumulador);
-		}
+		contador++;
+		soma += numero;	
+		System.out.println();
+		}while (numero != 0);
+		System.out.println("A soma dos números digitados é: " + soma);	
 	}
 }
 //Crie um programa que leia um número do teclado até que encontre um número igual a zero. 
